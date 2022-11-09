@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "Recognize",
+			"name": "ID Card",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -22,11 +22,40 @@
 					]
 				},
 				"url": {
-					"raw": "{{ URL }}/recognize",
+					"raw": "{{ URL }}/identity-card/recognize",
 					"host": [
 						"{{ URL }}"
 					],
 					"path": [
+						"identity-card",
+						"recognize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Sheet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ URL }}/score-sheet/recognize",
+					"host": [
+						"{{ URL }}"
+					],
+					"path": [
+						"score-sheet",
 						"recognize"
 					]
 				}

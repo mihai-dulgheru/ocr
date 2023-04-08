@@ -1,1 +1,1 @@
-# ocr-buletin
+# Optical character recognition for IDs
